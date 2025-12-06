@@ -7,4 +7,10 @@ h2 {
 }
 h3 {
     color:darkolivegreen
+    
+}
+body {
+    background-image: url("3409297.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
