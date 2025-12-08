@@ -1,36 +1,160 @@
-/* Selecting colors for different elements of the page */
+/* ===== RESET & BASE STYLES ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
 
-h1 {
-    color: white;
-}
-h2 {
-    color: white;
-}
-h3 {
-    color:white;
-}
-li {
-    color:white;
-}
 body {
-    background-image: url("5590457.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url("5590457.jpg"); /* Your background */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  color: #222;
+  line-height: 1.6;
 }
+
+/* ===== MAIN LAYOUT WRAPPER ===== */
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+
+  /* ✅ Glass Effect */
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(05px);
+  -webkit-backdrop-filter: blur(12px);
+
+  padding: 40px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+/* ===== HEADER ===== */
 header {
- text-align: right;
+  text-align: center;
+  margin-bottom: 25px;
 }
+
+/* Your Name Button */
 .profile-link {
-  font-size: 40px;
-  color: white;
-  background-color: #0077b5;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 8px;
+  display: inline-block;
+  font-size: 32px;
   font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #00141f25, #031a25);
+  padding: 12px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-bottom: 15px;
   transition: 0.3s;
 }
 
 .profile-link:hover {
-  background-color: #005f8d;
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #02080a, #051118);
+}
+
+/* Contact Info */
+header h2 {
+  font-weight: normal;
+  font-size: 16px;
+  color: #056494;
+  margin-top: 10px;
+}
+
+/* ===== NAVIGATION ===== */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 25px;
+  margin: 20px 0;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #0077b5;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background-color: #0076b570;
+  color: white;
+}
+
+/* ===== SECTION HEADINGS ===== */
+h2 {
+  color: #0076b570;
+  margin-bottom: 12px;
+  margin-top: 35px;
+  border-left: 5px solid #0077b5;
+  padding-left: 12px;
+}
+
+/* ===== SUBHEADINGS ===== */
+h3 {
+  margin-top: 10px;
+  color: #222;
+}
+
+/* ===== SECTIONS ===== */
+section, article {
+  margin-bottom: 30px;
+}
+
+/* ===== LISTS ===== */
+ul {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* ===== EXPERIENCE DATES ===== */
+section b {
+  color: #444;
+  font-size: 14px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 2px solid #ddd;
+}
+
+/* ===== HR STYLE ===== */
+hr {
+  margin: 25px 0;
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #aaa, transparent);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  main {
+    margin: 20px;
+    padding: 25px;
+  }
+
+  .profile-link {
+    font-size: 24px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
 }
