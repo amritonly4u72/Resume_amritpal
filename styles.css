@@ -1,7 +1,7 @@
 /* Selecting colors for different elements of the page */
 
 h1 {
-    color: rgb(84, 0, 87);
+    color: white;
 }
 h2 {
     color: orange;
@@ -14,8 +14,3 @@ body {
     background-image: url("3409297.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-li {
-  color: white;
-}
