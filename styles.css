@@ -18,4 +18,17 @@ body {
 header {
  text-align: right;
 }
+.profile-link {
+  font-size: 20px;
+  color: white;
+  background-color: #0077b5;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
 
+.profile-link:hover {
+  background-color: #005f8d;
+}
