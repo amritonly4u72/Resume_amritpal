@@ -4,13 +4,15 @@ h1 {
     color: white;
 }
 h2 {
-    color: orange;
+    color: white;
 }
 h3 {
-    color:darkolivegreen
+    color:white
     
 }
 body {
     background-image: url("3409297.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+}
+
